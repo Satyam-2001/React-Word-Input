@@ -26,7 +26,7 @@ npm install react-word-input
 
 ```javascript
 import './App.css';
-import WordInput from './component/WordInput';
+import WordInput from 'react-word-input';
 
 function App() {
 
