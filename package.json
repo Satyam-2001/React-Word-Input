@@ -1,0 +1,18 @@
+{
+  "name": "react-word-input",
+  "version": "0.0.1",
+  "description": "It is a react word input componenet",
+  "main": "WordInput.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Satyam Lohiya",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "component",
+    "word",
+    "input",
+    "hinted-word"
+  ]
+}
