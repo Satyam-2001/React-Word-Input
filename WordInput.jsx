@@ -37,7 +37,7 @@ const WordInput = (props) => {
         }
 
         if (event.key === 'Enter') {
-            props?.onEnter?.(word);
+            props.onEnter?.(word);
             return;
         }
 
@@ -49,7 +49,7 @@ const WordInput = (props) => {
         setWord(newWord);
 
         if (newWord.indexOf('_') === -1) {
-            props?.onComplete?.(newWord);
+            props.onComplete?.(newWord);
         }
     }
 
@@ -57,7 +57,10 @@ const WordInput = (props) => {
         event.preventDefault()
     }
 
-    useEffect(setCursor, [word])
+    useEffect(() => {
+        setCursor();
+        props.onChange?.(word)
+    }, [word])
 
     useEffect(() => {
         setWord(props.value);

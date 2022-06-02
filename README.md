@@ -18,9 +18,13 @@
 
 # Installation
 
+This module is installed via npm:
+
 ```
-npm install react-word-input
+npm i --prefix ./src react-word-input
 ```
+
+Note: This command will install this npm package in src folder of react-app.
 
 # Usage
 

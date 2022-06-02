@@ -1,18 +1,27 @@
 {
   "name": "react-word-input",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "It is a react word input componenet",
   "main": "WordInput.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Satyam Lohiya",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satyam-2001/React-Word-Input.git"
+  },
   "keywords": [
     "react",
     "component",
+    "react-component",
     "word",
     "input",
     "hinted-word"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/Satyam-2001/React-Word-Input/issues"
+  },
+  "homepage": "https://github.com/Satyam-2001/React-Word-Input#readme"
 }
