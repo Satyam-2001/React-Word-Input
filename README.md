@@ -24,7 +24,7 @@ This module is installed via npm:
 npm i --prefix ./src react-word-input
 ```
 
-Note: This command will install this npm package in src folder of react-app.
+`Note` : This command will install this npm package in src folder of react-app.
 
 # Usage
 
@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="App">
-      <WordInput className='word' value={'W_R_ __P_T'} onComplete={print} onEnter={print} autoFocus spellCheck={false}  />
+      <WordInput className='word' value={'W_R_ __P_T'} onChange={print} autoFocus />
     </div>
   );
 }
@@ -51,19 +51,18 @@ export default App;
 
 # API
 
-| Name           | Type           | Required | Default | Description                             |
-| -------------- | -------------- | -------- | ------- | --------------------------------------- |
+| Name           | Type           | Required | Default | Description                                 |
+| -------------- | -------------- | -------- | ------- | ------------------------------------------- |
+| onChange       | Function       | false    | -       | Returns word everytime when word is changed
 | onComplete     | Function       | false    | -       | Returns word when word is filled
 | onEnter        | Function       | false    | -       | Returns word when user press enter
 | value          | String         | true     | -       | The value of the hinted word  
-| disabled       | Boolean        | false    | false   | Disables all the inputs 
-| autoFocus      | Boolean        | false    | false   | Auto focuses input on initial page load  
 | className      | String         | false    | -       | Class for input element
-
-
+| disabled       | Boolean        | false    | false   | Disables the input
+| autoFocus      | Boolean        | false    | false   | Auto focuses input on initial page load  
+| spellCheck     | Boolean        | false    | false   | Check is word spells correct or not
 
 
 # Author
 
 <a href="https://github.com/Satyam-2001"> Satyam Lohiya </a>
-

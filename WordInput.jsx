@@ -1,17 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, useCallback } from 'react'
 
 const WordInput = (props) => {
     const [word, setWord] = useState(props.value);
     const inputRef = useRef();
 
-    const dummyProp = {...props}
+    const dummyProp = { ...props }
     delete dummyProp.onEnter
     delete dummyProp.onComplete
 
-    const setCursor = () => {
+    const setCursor = useCallback(() => {
         const wordLength = word.indexOf('_');
         const inp = inputRef.current;
-        
+
         if (inp.createTextRange) {
             const part = inp.createTextRange();
             part.move("character", wordLength);
@@ -19,12 +19,12 @@ const WordInput = (props) => {
         } else if (inp.setSelectionRange) {
             inp.setSelectionRange(wordLength, wordLength);
         }
-    }
+    }, [word])
 
     const onKeyDownHandler = (event) => {
 
         event.preventDefault()
-        
+
         if (event.key === 'Backspace') {
             const length = props.value.length;
             for (let i = length - 1; i >= 0; i--) {
@@ -60,14 +60,14 @@ const WordInput = (props) => {
     useEffect(() => {
         setCursor();
         props.onChange?.(word)
-    }, [word])
+    }, [word,setCursor,props])
 
     useEffect(() => {
         setWord(props.value);
     }, [props.value])
 
     return (
-        <input {...dummyProp} ref={inputRef} type="text" onChange={onChangeHandler} onKeyDown={onKeyDownHandler} onClick={setCursor} autoComplete="off" value={word} />
+        <input spellCheck={false} {...dummyProp} ref={inputRef} type="text" onChange={onChangeHandler} onKeyDown={onKeyDownHandler} onClick={setCursor} autoComplete="off" value={word} />
     )
 }
 
