@@ -23,7 +23,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "C:\\Users\\lohiy\\Projects\\Npm Packages\\React-Word-Input\\test\\node_modules\\eslint-config-react-app\\base.js",
+      "react-app",
       "react-app/jest"
     ]
   },
