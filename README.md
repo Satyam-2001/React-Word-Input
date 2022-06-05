@@ -10,10 +10,12 @@
  It take value as the hinted word and callback functions onComplete/onEnter which return the word entered by user.
 
 # Working Demo
-
-<p align="center">
+<a href="https://Satyam-2001.github.io/React-Word-Input">
+<div align="center">
+  <p align="center">LIVE DEMO</p>
   <img src="https://user-images.githubusercontent.com/88069082/171338041-af8672d3-eca5-4961-bbc6-1da38a0f1eeb.gif" />
-</p>
+</div>
+</a>
 
 
 # Installation
@@ -21,16 +23,14 @@
 This module is installed via npm:
 
 ```
-npm i --prefix ./src react-word-input
+npm install react-word-input
 ```
-
-`Note` : This command will install this npm package in src folder of react-app.
 
 # Usage
 
 ```javascript
 import './App.css';
-import WordInput from 'react-word-input';
+import { WordInput } from 'react-word-input';
 
 function App() {
 

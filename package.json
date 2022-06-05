@@ -1,9 +1,11 @@
 {
   "name": "react-word-input",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "React functional component for input hinted word",
-  "main": "WordInput.jsx",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "scripts": {
+    "build-lib": "rollup -c",
     "build": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Satyam Lohiya",
@@ -20,6 +22,20 @@
     "input",
     "hinted-word"
   ],
+  "peerDependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "babel-loader": "^8.2.5",
+    "rollup": "^2.75.5",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2"
+  },
   "bugs": {
     "url": "https://github.com/Satyam-2001/React-Word-Input/issues"
   },

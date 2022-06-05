@@ -60,7 +60,7 @@ const WordInput = (props) => {
     useEffect(() => {
         setCursor();
         props.onChange?.(word)
-    }, [word,setCursor,props])
+    }, [word, setCursor, props])
 
     useEffect(() => {
         setWord(props.value);
@@ -71,4 +71,4 @@ const WordInput = (props) => {
     )
 }
 
-export default WordInput
+export { WordInput }
