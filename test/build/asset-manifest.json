@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React-Word-Input/static/css/main.0f702cfc.css",
+    "main.js": "/React-Word-Input/static/js/main.b49584ee.js",
+    "static/js/787.0c3f432a.chunk.js": "/React-Word-Input/static/js/787.0c3f432a.chunk.js",
+    "index.html": "/React-Word-Input/index.html",
+    "main.0f702cfc.css.map": "/React-Word-Input/static/css/main.0f702cfc.css.map",
+    "main.b49584ee.js.map": "/React-Word-Input/static/js/main.b49584ee.js.map",
+    "787.0c3f432a.chunk.js.map": "/React-Word-Input/static/js/787.0c3f432a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f702cfc.css",
+    "static/js/main.b49584ee.js"
+  ]
+}
